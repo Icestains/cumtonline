@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css绘制图形</title>
+	<style>
+		div{
+			width: 100px;height: 100px;
+			background: #66ccff;
+			margin:20px 20px;
+			float: left;
+			text-align: center;
+			line-height: 100px;
+		}
+
+		hr{
+			border: 2px solid black;
+			background: black;
+		}
+
+		.clearFloat{
+			clear: both;
+		}
+
+		.test2{
+			border-radius: 50%;
+		}
+
+		.test3{
+			width: 200px;
+		}
+
+		.test4{
+			width: 200px;
+			border-radius: 100px/50px;
+		}
+
+		.triangle{
+			width: 0;height: 0;
+			background: none;
+		}
+
+		.test5{
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 100px solid #66ccff;
+		}
+
+		.test6{
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-top: 100px solid #66ccff;
+		}
+
+		.test7{
+			border-top: 50px solid transparent;
+			border-right: 100px solid #66ccff;
+			border-bottom: 50px solid transparent;
+		}
+
+		.test8{
+			border-top: 50px solid transparent;
+			border-left: 100px solid #66ccff;
+			border-bottom: 50px solid transparent;
+		}
+
+		.test9{
+			border-right: 100px solid #66ccff;
+			border-top: 100px solid transparent;
+		}
+
+		.test10{
+			border-right: 100px solid transparent;
+			border-top: 100px solid #66ccff;
+		}
+
+		.test11{
+			border-left: 100px solid transparent;
+			border-top: 100px solid #66ccff;
+		}
+
+		.test12{
+			border-left: 100px solid #66ccff;
+			border-top: 100px solid transparent;
+		}
+
+		.test13{
+			width: 160px;
+			background: #66ccff;
+			margin-left:50px;
+			margin-right: 50px;
+			transform: skew(45deg);
+		}
+
+		.test14{
+			height: 0;
+			border-bottom: 100px solid #66ccff;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			background: none;
+		}
+
+		.test15{
+			width: 40px;height: 0px;
+			margin-bottom: 70px;
+			border-right: 30px solid transparent;
+			border-bottom: 50px solid #66ccff;
+			border-left: 30px solid transparent;
+			position: relative;
+			background: none;
+		}
+
+		.test15::before{
+			content: '';
+			position: absolute;
+			top: 50px; left: -30px;
+			border-top: 50px solid #66ccff;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			z-index: -1;
+		}
+
+		.test16{
+			width: 34px;height: 0px;
+			margin-bottom: 70px;
+			border-right: 33px solid transparent;
+			border-bottom: 50px solid #66ccff;
+			border-left: 33px solid transparent;
+			position: relative;
+			background: none;
+		}
+
+		.test16::before{
+			content: '';
+			width: 34px;
+			position: absolute;
+			top: 50px; left:-33px;
+			border-right: 33px solid transparent;
+			border-top: 50px solid #66ccff;
+			border-left: 33px solid transparent;
+			z-index: -1;
+		}
+
+		.test17{
+			height: 50px;
+			margin:45px 20px;
+			line-height: 50px;
+			position: relative;
+		}
+
+		.test17::before{
+			content: '';
+			width: 34px;
+			position: absolute;
+			top: 50px; left:0px;
+			border-right: 33px solid transparent;
+			border-top: 25px solid #66ccff;
+			border-left: 33px solid transparent;
+			z-index: -1;
+		}
+
+		.test17::after{
+			content: '';
+			width: 34px;
+			position: absolute;
+			top: -25px; left:0px;
+			border-right: 33px solid transparent;
+			border-bottom: 25px solid #66ccff;
+			border-left: 33px solid transparent;
+		}
+
+		.test18{
+		    width: 40px;
+		    height: 40px;
+		    padding: 30px;
+		    line-height: 20px;
+		    display: table-cell;
+		    background: linear-gradient(135deg, transparent 20px, #66ccff 0) top left,
+		        linear-gradient(-135deg, transparent 20px, #66ccff 0) top right,
+		        linear-gradient(-45deg, transparent 20px, #66ccff 0) bottom right,
+		        linear-gradient(45deg, transparent 20px, #66ccff 0) bottom left;
+		    background-size: 50% 50%;
+		    background-repeat: no-repeat;			
+		}
+
+		.test19 {
+		   margin: 50px 0;
+		   position: relative;
+		   width: 0;height: 0;
+		   border-right: 100px solid transparent;
+		   border-bottom: 70px  solid #66ccff;
+		   border-left: 100px solid transparent;
+		   transform: rotate(35deg) scale(.6);
+		   background: none;
+		}
+		.test19:before {
+		    content: '';
+		    position: absolute;
+		    border-bottom: 80px solid #66ccff;
+		    border-left: 30px solid transparent;
+		    border-right: 30px solid transparent;
+		    top: -45px;
+		    left: -65px;
+		    transform: rotate(-35deg);
+		}
+		.test19:after {
+		    content: '';
+		    position: absolute;
+		    top: 3px;
+		    left: -105px;
+		    border-right: 100px solid transparent;
+		    border-bottom: 70px solid #66ccff;
+		    border-left: 100px solid transparent;
+		    transform: rotate(-70deg);
+		}
+
+		.test20 {
+		    position: relative;
+		    width: 0;height: 0;
+		    border-left: 50px solid transparent;
+		    border-right: 50px solid transparent;
+		    border-bottom: 90px solid #66ccff;
+		    background: none;
+		}
+
+		.test20:after {
+		    content: "";
+		    position: absolute;
+		    border-left: 50px solid transparent;
+		    border-right: 50px solid transparent;
+		    border-top: 90px solid #66ccff;
+		    top: 30px;
+		    left: -50px;
+		}
+
+		.test21 {
+		    position: relative;
+		    background-color: #66ccff;
+		    margin:20px 40px;
+		}
+		 
+		.test21::before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100px;
+		    height: 100px;
+		    transform: rotate(45deg);
+		    background-color: #66ccff;
+		}
+
+		.test22 {
+		    position: relative;
+		    margin-bottom: 100px!important;
+		    background-color: #66ccff;
+		    transform: rotate(30deg);
+		    margin-left: 40px;
+		}
+		 
+		.test22::before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100px;
+		    height: 100px;
+		    transform: rotate(30deg);
+		    background-color: #66ccff;
+		}
+		 
+		.test22::after {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100px;
+		    height: 100px;
+		    transform: rotate(60deg);
+		    background-color: #66ccff;
+		}
+
+		.test23 {
+		   width: 120px;
+		   height: 160px;
+		   background-color: #66ccff;
+		   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		}
+
+	</style>
+</head>
+<body>
+	<hr>
+	<h2>一般——1~4</h2>
+	<div class="test1">正方形</div>
+	<div class="test2">圆</div>
+	<div class="test3">长方形</div>
+	<div class="test4">椭圆</div>
+	<section class="clearFloat"></section>
+
+	<hr>
+
+	<h2>三角一——5~8</h2>
+	<div class="test5 triangle"></div>
+	<div class="test6 triangle"></div>
+	<div class="test7 triangle"></div>
+	<div class="test8 triangle"></div>
+	<section class="clearFloat"></section>
+
+	<hr>
+
+	<h2>三角二——9~12</h2>
+	<div class="test9 triangle"></div>
+	<div class="test10 triangle"></div>
+	<div class="test11 triangle"></div>
+	<div class="test12 triangle"></div>
+	<section class="clearFloat"></section>
+
+	<hr>
+	
+	<h2>凸多边形——13~18</h2>
+	<div class="test13 Convex_polygon">13</div>
+	<div class="test14 Convex_polygon">14</div>
+	<div class="test15 Convex_polygon">15</div>
+	<div class="test16 Convex_polygon">16</div>
+	<div class="test17 Convex_polygon">17</div>
+	<div class="test18 Convex_polygon">18</div>
+	<section class="clearFloat"></section>
+	<strong>
+		*17.为梯形+长方形+梯形的方法<br>
+		*18.为多重线性渐变实现切角方法
+	</strong>
+	<section class="clearFloat"></section>
+
+	<hr>
+	<h2>凹多边形——19~22</h2>
+	<div class="test19">19</div>
+	<div class="test20">20</div>
+	<div class="test21">21</div>
+	<div class="test22">22</div>
+	<section class="clearFloat"></section>
+
+	<hr>
+
+	<h2>特殊图形：蛋</h2>
+
+	<div class="test23">23</div>
+	<section class="clearFloat"></section>
+
+	<hr>
+	
+</body>
+</html>
