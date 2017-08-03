@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css导航条</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		header{
+			width: 100%;
+			height: 100px;
+			background: #99FFFF;
+		}
+
+		ul{
+			list-style-type: none;
+			height: 60px;
+			overflow: hidden;
+		}
+
+		li{
+			display: inline;
+			float: left;
+		}
+
+		a{
+			display:block;
+			color: #FFFFFF;
+			background: #bebebe;
+			width: 140px;
+			text-align: center;
+			padding: 20px 4px;
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: bold;
+			text-decoration: none;
+			transition: 1s;
+		}
+
+		a:hover,a:active{
+			background: #cc0000;
+			width: 200px;
+			height: 200px;
+		}
+
+		.stardust{
+			background: #9999FF;
+			position: absolute;
+			top: 20%;left: 20%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		.stardust a{
+			background: #9999FF;
+			color: yellow;
+			transition: 0.8s;
+
+		}
+
+		.stardust a:hover{
+			background: yellow;
+			padding: 25px 4px;
+			font-size: 20px;
+			color: #9999FF;
+			width: 200px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li class="one">
+				<a href="#" id="home">HOME</a>
+			</li>
+			<li>
+				<a href="#">NEWS</a>
+			</li>
+			<li>
+				<a href="#">ARTICLES</a>
+			</li>
+			<li>
+				<a href="#">FORUM</a>
+			</li>
+			<li>
+				<a href="#">CONTACT</a>
+			</li>
+			<li>
+				<a href="#">ABOUT</a>
+			</li>
+			
+		</ul>
+	</header>
+
+	<li class="stardust">
+		<a href="http://upload-images.jianshu.io/upload_images/3464381-ddd5f8bedf0c9ba3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" name="stardust">星尘</a>
+	</li>
+
+	
+
+
+	
+</body>
+</html>
