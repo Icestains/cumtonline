@@ -1,6 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
+	border: 0;
+	text-align: center;
 }
 
 body,html{
@@ -10,13 +12,22 @@ body,html{
 header{
 	width: 100%;
 	height: 120px;
+	position: fixed;
+	z-index: 999;
+}
+
+header .background{
+	left: 0;top: 0;
+	position: absolute;
+	width: 100%;
+	height: 120px;
 	background: #000000;
-	position: relative;
+	opacity: 0.5
 }
 
 header img{
+	left: 10%;
 	top: 50%;
-	left: 30px;
 	transform: translateY(-50%);
 	position: absolute;
 }
@@ -31,10 +42,8 @@ header ul{
 
 header li{
 	list-style-type: none;
-	width: 100px;
 	height: 50px;
 	line-height: 50px;
-	margin-right: 20px;
 	float: left;
 	position: relative;
 }
@@ -45,38 +54,35 @@ header li{
 }
 
 header a{
+	padding:31px 20px 30px;
 	font-size: 24px;
 	text-decoration: none;
 	color: #ffffff;
-}
-
-.main{
-	left: 0px;
-	top: 0px;
-	width: 100%;
+	transition: color .1s cubic-bezier(0, 0, 0.93, 0.09);
+	cursor: auto;
 }
 
 .cumtonline{
-	height: 1100px;
+	height: 988px;
 	color: #ffffff;
 	background: #a98761;
 	position: relative;
 }
 
-.cumtonline h2{
-	top: 160px;
-	left: 150px;
+.cumtonline span{
+	left: 10%;
+	top: 280px;
 	font-size: 50px;
 	position: absolute;
 }
 
 .cumtonline p{
-	width: 700px;
+	width: 40%;
 	word-break: break-all;
 	font-size: 20px;
 	line-height: 30px;
-	top: 270px;
-	left: 150px;
+	top: 390px;
+	left: 10%;
 	position: absolute;
 }
 
@@ -92,15 +98,14 @@ header a{
 	cursor:pointer;
 	width: 160px;
 	height: 50px;
-	top: 560px;
-	left: 150px;
+	left: 10%;
+	top: 680px;
 	font-size: 18px;
 	color: #ffffff;
 	background: #8fc540;
 	border-radius: 4px;
 	position: absolute;
 }
-
 
 .product{
 	height: 1140px;
@@ -125,7 +130,11 @@ header a{
 	top: 50%;
 	left: 70%;
 	transform:translateX(-50%) translateY(-50%);
-	position: absolute; 
+	position: absolute;
+
+	height: 50%;
+	background: #66ccff;
+	
 }
 
 .product .arrow{
@@ -163,30 +172,140 @@ header a{
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
-	border: 0;
 	border-radius: 4px;
 }
 
 .introduction{
-	height: 990px;
-	line-height: 990px;
-	background: ;
+	height: 990px;position: relative;
+}
+
+.introduction #intro-1,#intro-2{
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.introduction #intro-1{
+	top: 5%;
+	font-size: 30px;
+}
+
+.introduction #intro-2{
+	top: 10%;
+}
+
+.introduction .intr{
+	width: 40%;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.introduction #intro-3,#intro-4{
+	float: left;
+	padding: 10px 0;
+	clear: both;
+}
+
+.introduction p{
+	text-align: left;
+	line-height: 60px;
+	clear: both;
 }
 
 .meeting{
 	height: 750px;
-	line-height: 750px;
-	background: #ffffff;
+	text-align: left;
+	position: relative;
+}
+
+.meeting #name{
+	font-size: 30px;
+	top: 10%;
+	left: 20%;
+	position: absolute;
+}
+
+.meeting #list{
+	font-size: 18px;
+	line-height: 50px;
+	top: 20%;
+	left: 20%;
+	position: absolute;
+}
+
+.meeting #more{
+	cursor:pointer;
+	left: 20%;
+	top: 70%;
+	font-size: 18px;
+	color: #ffffff;
+	background: #8fc540;
+	border-radius: 4px;
+	width: 120px;
+	padding: 20px;
+	position: absolute;
+}
+
+.meeting img{
+	top: 10%;
+	left: 50%;
+	position: absolute;
 }
 
 .joinUs{
 	height: 1000px;
-	line-height: 1000px;
 	background: #f2f2f2;
+	position: relative;
 }
 
+.joinUs span{
+	font-size: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.joinUs #ju_sp1{
+	font-size: 30px;
+	top: 80px;
+}
+
+.joinUs #ju_sp2{
+	font-size: 20px;
+	top: 130px;
+}
+
+.info-input{
+	width: 1200px;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.joinUs input{
+	width: 200px;
+	height: 46px;
+	font-size: 16px;
+	text-align: left;
+	margin:4px;
+	padding-left: 10px;
+	border-radius: 4px;
+}
+
+.info-input #power{
+	width: 900px;
+}
+
+.info-input #joinusnow{
+	font-size: 20px;
+	color: #ffffff;
+	background: #8fc540;
+	text-align: center;
+}
 
 footer{
-	height: 850px;
-	line-height: 850px;
+	height: 400px;
+	line-height: 400px;
 }
