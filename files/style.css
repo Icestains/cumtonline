@@ -126,13 +126,13 @@ header a{
 }
 
 .production img{
-	width: 50%;
+	width: 500px;
 	top: 50%;
 	left: 70%;
 	transform:translateX(-50%) translateY(-50%);
 	position: absolute;
 
-	height: 50%;
+	height: 400px;
 	background: #66ccff;
 	
 }
@@ -151,6 +151,7 @@ header a{
 .product .next{
 	right: 40px;
 }
+
 
 .us{
 	height: 100px;
