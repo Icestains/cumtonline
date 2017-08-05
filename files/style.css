@@ -163,6 +163,8 @@ header a{
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
+	border: 0;
+	border-radius: 4px;
 }
 
 .introduction{
