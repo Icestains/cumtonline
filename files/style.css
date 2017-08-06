@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	text-align: center;
 }
 
 body,html{
@@ -177,7 +176,9 @@ header a{
 }
 
 .introduction{
-	height: 990px;position: relative;
+	height: 990px;
+	position: relative;
+	text-align: center;
 }
 
 .introduction #intro-1,#intro-2{
