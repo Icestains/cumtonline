@@ -1,10 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-<<<<<<< HEAD
-=======
 	border: 0;
->>>>>>> refs/remotes/origin/gh-pages
 }
 
 body,html{
@@ -14,15 +11,6 @@ body,html{
 header{
 	width: 100%;
 	height: 120px;
-<<<<<<< HEAD
-	background: #000000;
-	position: relative;
-}
-
-header img{
-	top: 50%;
-	left: 30px;
-=======
 	position: fixed;
 	z-index: 999;
 }
@@ -39,7 +27,6 @@ header .background{
 header img{
 	left: 10%;
 	top: 50%;
->>>>>>> refs/remotes/origin/gh-pages
 	transform: translateY(-50%);
 	position: absolute;
 }
@@ -54,15 +41,8 @@ header ul{
 
 header li{
 	list-style-type: none;
-<<<<<<< HEAD
-	width: 100px;
 	height: 50px;
 	line-height: 50px;
-	margin-right: 20px;
-=======
-	height: 50px;
-	line-height: 50px;
->>>>>>> refs/remotes/origin/gh-pages
 	float: left;
 	position: relative;
 }
@@ -73,21 +53,6 @@ header li{
 }
 
 header a{
-<<<<<<< HEAD
-	font-size: 24px;
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.main{
-	left: 0px;
-	top: 0px;
-	width: 100%;
-}
-
-.cumtonline{
-	height: 1100px;
-=======
 	padding:31px 20px 30px;
 	font-size: 24px;
 	text-decoration: none;
@@ -98,41 +63,25 @@ header a{
 
 .cumtonline{
 	height: 988px;
->>>>>>> refs/remotes/origin/gh-pages
 	color: #ffffff;
 	background: #a98761;
 	position: relative;
 }
 
-<<<<<<< HEAD
-.cumtonline h2{
-	top: 160px;
-	left: 150px;
-=======
 .cumtonline span{
 	left: 10%;
 	top: 280px;
->>>>>>> refs/remotes/origin/gh-pages
 	font-size: 50px;
 	position: absolute;
 }
 
 .cumtonline p{
-<<<<<<< HEAD
-	width: 700px;
-	word-break: break-all;
-	font-size: 20px;
-	line-height: 30px;
-	top: 270px;
-	left: 150px;
-=======
 	width: 40%;
 	word-break: break-all;
 	font-size: 20px;
 	line-height: 30px;
 	top: 390px;
 	left: 10%;
->>>>>>> refs/remotes/origin/gh-pages
 	position: absolute;
 }
 
@@ -148,13 +97,8 @@ header a{
 	cursor:pointer;
 	width: 160px;
 	height: 50px;
-<<<<<<< HEAD
-	top: 560px;
-	left: 150px;
-=======
 	left: 10%;
 	top: 680px;
->>>>>>> refs/remotes/origin/gh-pages
 	font-size: 18px;
 	color: #ffffff;
 	background: #8fc540;
@@ -162,10 +106,6 @@ header a{
 	position: absolute;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/gh-pages
 .product{
 	height: 1140px;
 	position: relative;
@@ -185,13 +125,6 @@ header a{
 }
 
 .production img{
-<<<<<<< HEAD
-	width: 50%;
-	top: 50%;
-	left: 70%;
-	transform:translateX(-50%) translateY(-50%);
-	position: absolute; 
-=======
 	width: 500px;
 	top: 50%;
 	left: 70%;
@@ -201,7 +134,6 @@ header a{
 	height: 400px;
 	background: #66ccff;
 	
->>>>>>> refs/remotes/origin/gh-pages
 }
 
 .product .arrow{
@@ -219,10 +151,7 @@ header a{
 	right: 40px;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/gh-pages
 .us{
 	height: 100px;
 	font-size: 24px;
@@ -243,18 +172,11 @@ header a{
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
-<<<<<<< HEAD
-=======
 	border-radius: 4px;
->>>>>>> refs/remotes/origin/gh-pages
 }
 
 .introduction{
 	height: 990px;
-<<<<<<< HEAD
-	line-height: 990px;
-	background: ;
-=======
 	position: relative;
 	text-align: center;
 }
@@ -291,15 +213,10 @@ header a{
 	text-align: left;
 	line-height: 60px;
 	clear: both;
->>>>>>> refs/remotes/origin/gh-pages
 }
 
 .meeting{
 	height: 750px;
-<<<<<<< HEAD
-	line-height: 750px;
-	background: #ffffff;
-=======
 	text-align: left;
 	position: relative;
 }
@@ -336,21 +253,10 @@ header a{
 	top: 10%;
 	left: 50%;
 	position: absolute;
->>>>>>> refs/remotes/origin/gh-pages
 }
 
 .joinUs{
 	height: 1000px;
-<<<<<<< HEAD
-	line-height: 1000px;
-	background: #f2f2f2;
-}
-
-
-footer{
-	height: 850px;
-	line-height: 850px;
-=======
 	background: #f2f2f2;
 	position: relative;
 }
@@ -404,5 +310,4 @@ footer{
 footer{
 	height: 400px;
 	line-height: 400px;
->>>>>>> refs/remotes/origin/gh-pages
 }
