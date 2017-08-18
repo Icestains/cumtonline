@@ -6,11 +6,17 @@
 
 body,html{
 	min-width: 1280px;
+
+}
+
+main{
+
 }
 
 header{
 	width: 100%;
-	height: 120px;
+	min-width: 1280px;
+	height: 100px;
 	position: fixed;
 	z-index: 999;
 }
@@ -19,12 +25,13 @@ header .background{
 	left: 0;top: 0;
 	position: absolute;
 	width: 100%;
-	height: 120px;
+	height: 100%;
 	background: #000000;
 	opacity: 0.5
 }
 
 header img{
+	height: 60%;
 	left: 10%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -32,15 +39,17 @@ header img{
 }
 
 header ul{
+	height: 50%;
 	top: 50%;
-	right: 10%;
+	left: 60%;
 	transform: translateY(-50%);
-	text-align: center;
 	position: absolute;
+	text-align: center;
 }
 
 header li{
 	list-style-type: none;
+	display: inline;
 	height: 50px;
 	line-height: 50px;
 	float: left;
@@ -54,15 +63,16 @@ header li{
 
 header a{
 	padding:31px 20px 30px;
-	font-size: 24px;
+	font-size: 18px;
 	text-decoration: none;
 	color: #ffffff;
 	transition: color .1s cubic-bezier(0, 0, 0.93, 0.09);
 	cursor: auto;
 }
 
-.cumtonline{
-	height: 988px;
+.cumtonline{/*
+	height: 988px;*/
+	padding-top: 50%;
 	color: #ffffff;
 	background: #a98761;
 	position: relative;
@@ -70,17 +80,17 @@ header a{
 
 .cumtonline span{
 	left: 10%;
-	top: 280px;
+	top: 20%;
 	font-size: 50px;
 	position: absolute;
 }
 
 .cumtonline p{
-	width: 40%;
+	width: 600px;
 	word-break: break-all;
 	font-size: 20px;
 	line-height: 30px;
-	top: 390px;
+	top: 30%;
 	left: 10%;
 	position: absolute;
 }
@@ -97,8 +107,7 @@ header a{
 	cursor:pointer;
 	width: 160px;
 	height: 50px;
-	left: 10%;
-	top: 680px;
+	left: 10%;top: 70%;
 	font-size: 18px;
 	color: #ffffff;
 	background: #8fc540;
@@ -107,12 +116,13 @@ header a{
 }
 
 .product{
-	height: 1140px;
+	padding-top: 40%;
+	/*height: 1140px;*/
 	position: relative;
 }
 
 .production h2{
-	top: 320px;
+	top: 20%;
 	left: 20%;
 	position: absolute; 
 }
@@ -138,7 +148,7 @@ header a{
 
 .product .arrow{
 	cursor: pointer;
-	top: 500px;
+	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
 }
@@ -176,7 +186,8 @@ header a{
 }
 
 .introduction{
-	height: 990px;
+	/*height: 990px;*/
+	padding-top: 50%;
 	position: relative;
 	text-align: center;
 }
@@ -216,7 +227,8 @@ header a{
 }
 
 .meeting{
-	height: 750px;
+	/*height: 750px;*/
+	padding-top: 40%;
 	text-align: left;
 	position: relative;
 }
@@ -256,7 +268,9 @@ header a{
 }
 
 .joinUs{
-	height: 1000px;
+	/*height: 1000px;*/
+	padding-top: 40%;
+
 	background: #f2f2f2;
 	position: relative;
 }
@@ -308,6 +322,7 @@ header a{
 }
 
 footer{
-	height: 400px;
-	line-height: 400px;
+	/*height: 400px;*/
+	padding-bottom: 20%;
+
 }
