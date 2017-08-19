@@ -5,25 +5,27 @@
 	<title>cumtonline</title>
 
 	<link rel="stylesheet" href="./files/style.css">
+	<link rel="stylesheet" href="./files/checkBox.css">
+
 
 </head>
 <body>
-		<header>
+	<header id="header">
 		<div class="background"></div>
 
 		<img src="./files/imgs/FLYING_STUDIO.png" alt="FLYING_STUDIO_icon">
 		
 		<ul>
-			<li class="focus"><a href="#">首页</a></li>
-			<li class="focus"><a href="#">产品</a></li>
-			<li class="focus"><a href="#">部门</a></li>
-			<li class="focus"><a href="#">分享</a></li>
-			<li class="focus"><a href="#">联系我们</a></li>
+			<li class="focus"><a href="#cumtonline">首页</a></li>
+			<li class="focus"><a href="#product">产品</a></li>
+			<li class="focus"><a href="#introduction">部门</a></li>
+			<li class="focus"><a href="#meeting">分享</a></li>
+			<li class="focus"><a href="#jU">联系我们</a></li>
 		</ul>
 
 	</header>
 
-	<section class="cumtonline">
+	<section class="cumtonline" id="cumtonline">
 		<span>学生在线</span>
 		<p>学生在线成立于2000年10月，是矿大最好的学生互联网平台。<br>
 		这里汇聚了技术精湛的编程高手、热爱艺术的设计精英、认真严谨的办公管理、统筹兼顾的运营俊杰和激情澎湃的视频能人，用充足的活力奇妙的创意更新着学生在线，用扎实的基础创新的理念凝聚着学生在线。<br>
@@ -35,7 +37,7 @@
 
 	</section>
 
-	<section class="product">
+	<section class="product" id="product">
 		<div class="production">
 			<h2>矿大浏览器</h2>
 			<p>矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器</p>
@@ -55,7 +57,7 @@
 
 	</section>
 
-	<section class="introduction">
+	<section class="introduction" id="introduction">
 		
 		<span id="intro-1">部门介绍</span><br>
 
@@ -81,11 +83,11 @@
 	<section class="join us">
 
 		<p>我们就在找你 :  )</p>
-		<input type="button" id="joinUs" value="join us">
+		<a href="#jU"><input type="button" id="joinUs" value="join us"></a>
 
 	</section>
 
-	<section class="meeting">
+	<section class="meeting" id="meeting">
 
 		<span id="name">17.09.01大例会</span>
 
@@ -104,7 +106,7 @@
 
 	</section>
 
-	<section class="joinUs">
+	<section class="joinUs" id="jU">
 
 		<div class="ju_sp">
 			<span id="ju_sp1">立即加入我们</span><br>
@@ -118,22 +120,24 @@
 
 				<div class="forms">
 					<span>姓名</span>
-					<input type="text" value="">
+					<input type="text" value="" placeholder="姓名">
 				</div>
 
 				<div class="forms">
-					<span>班级</span>
-					<input type="text" value="">
-				</div>
 
-				<div class="forms">
-					<span>电话</span>
-					<input type="text" value="">
-				</div>
+					<span>性别</span>
+					<!-- <input type="text" name="gender"> -->
 
-				<div class="forms">
-					<span>邮箱</span>
-					<input type="text" value="">
+					<div class="radio-wrap">
+						<input type="radio" id="man" class="magic-radio" value="男" name="gender">
+						<label class="radio-label" for="man">男</label>
+					</div>
+
+					<div class="radio-wrap">
+						<input type="radio" id="woman" value="女" class="magic-radio" name="gender">
+						<label class="radio-label" for="woman">女</label>
+					</div>
+
 				</div>
 
 				<div class="forms">
@@ -164,23 +168,26 @@
 					</select>
 				</div>
 
-<!-- 性别这部分是移植过来的 -->
 				<div class="forms">
+					<span>班级</span>
+					<input type="text" value="" placeholder="XX级XX班">
+				</div>
 
-					<span>性别</span>
-					<!-- <input type="text" name="gender"> -->
+				<div class="forms">
+					<span>电话</span>
+					<input type="text" value="" placeholder="1XX-XXXX-XXXX">
+				</div>
 
-					<div class="radio-wrap">
-						<input type="radio" id="man" class="magic-radio" value="男" name="gender">
-						<label class="radio-label" for="man">男</label>
-					</div>
+				<div class="forms">
+					<span>Q Q</span>
+					<input type="text" value="" placeholder="QQ">
+				</div>
+				
+				<div class="forms">
+					<span>邮箱</span>
+					<input type="text" value="" placeholder="example@example.com">
+				</div>
 
-					<div class="radio-wrap">
-						<input type="radio" id="woman" value="女" class="magic-radio" name="gender">
-						<label class="radio-label" for="woman">女</label>
-					</div>
-
-				</div> 
 				
 			</div>
 			
@@ -189,8 +196,65 @@
 				<textarea id="power" placeholder="个人简介包括特长，爱好，相关经验等。如有相关作品，可发到邮箱online_cumt@foxmail.com,
 邮件名为:学生在线招新+名字"></textarea> 
 
-				<span>组别</span>
+				<div class="forms" id="apply-group">
 
+					<span id="group">申请小组</span>
+
+					<div class="info-checkbox">
+
+					<div class="group-col">
+      					<div> 
+						 	<input id="d1" type="checkbox" name="theGroup" value="视觉设计" class="checkbix info-checkbox" data-text="视觉设计">
+						 	<label aria-label="" role="checkbox" for="d1" class="checkbix">
+						 	<span class=""></span>视觉设计</label>
+     					</div>
+
+						<div>
+       						<input id="d2" type="checkbox" name="theGroup" value="前端" class="checkbix info-checkbox" data-text="前端组">
+       						<label aria-label="" role="checkbox" for="d2" class="checkbix">
+       						<span class=""></span>前端组</label>
+      					</div>
+
+						<div>
+        					<input id="d3" type="checkbox" name="theGroup" value="后端" class="checkbix info-checkbox" data-text="后端组">
+        					<label aria-label="" role="checkbox" for="d3" class="checkbix">
+        					<span class=""></span>后端组</label>
+      					</div>
+
+						<div>
+        					<input id="d4" type="checkbox" name="theGroup" value="移动互联" class="checkbix info-checkbox" data-text="移动互联组">
+        					<label aria-label="" role="checkbox" for="d4" class="checkbix">
+        					<span class=""></span>移动互联组</label>
+      					</div>
+
+					</div>
+
+
+					<div class="group-col">
+
+	  					<div>
+	  						<input id="d5" type="checkbox" name="theGroup" value="视频" class="checkbix info-checkbox" data-text="视频组">
+	  						<label aria-label="" role="checkbox" for="d5" class="checkbix">
+	  						<span class=""></span>视频组</label>
+	  					</div>
+
+	  					<div>
+	  						<input id="d6" type="checkbox" name="theGroup" value="办公" class="checkbix info-checkbox" data-text="办公组">
+	  						<label aria-label="" role="checkbox" for="d6" class="checkbix">
+	  						<span class=""></span>办公组</label>
+	  					</div>
+
+	  					<div>
+	  						<input id="d7" type="checkbox" name="theGroup" value="运营" class="checkbix info-checkbox" data-text="运营组">
+	  						<label aria-label="" role="checkbox" for="d7" class="checkbix">
+	  						<span class=""></span>运营组</label>
+	  					</div>
+
+					</div>
+
+
+					</div>
+				</div>
 			</div>
 			
 			<input type="button" id="joinusnow" value="加入我们">
@@ -203,9 +267,8 @@
 
 	<footer>footer</footer>
 
-	
-
 	<script src="./files/index.js"></script>
+	<script src="./files/checkBox.js"></script>
 
 </body>
 </html>

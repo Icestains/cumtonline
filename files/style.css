@@ -57,12 +57,38 @@ header li{
 }
 
 header a{
-	padding:31px 20px 30px;
+	padding:30px 20px 30px;
 	font-size: 18px;
 	text-decoration: none;
 	color: #ffffff;
 	transition: color .1s cubic-bezier(0, 0, 0.93, 0.09);
 	cursor: auto;
+}
+
+.slideUp {
+ /* -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);*/
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.slideDown {
+  /*-webkit-transform: translateY(0);
+  transform: translateY(0);*/
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
 }
 
 .cumtonline{
@@ -187,8 +213,7 @@ header a{
 }
 
 .introduction{
-	/*height: 990px;*/
-	padding-top: 50%;
+	height: 900px;
 	position: relative;
 	text-align: center;
 }
@@ -308,7 +333,7 @@ header a{
 
 .inputleft .forms{
 	width: 500px;
-	height: 70px;
+	height: 60px;
 	position: relative;
 	display: block; 
 }
@@ -325,12 +350,12 @@ header a{
 	height: 46px;
 	font-size: 20px;
 	line-height: 46px;
-	padding-left: 20px;
+	padding-left: 10px;
 	border-radius: 4px;
 }
 
 .inputleft select{
-	width: 320px;
+	width: 310px;
 	height: 46px;
 	font-size: 20px;
 	border-radius: 4px;
@@ -409,14 +434,33 @@ header a{
 }
 
 .inputright #power{
-	width: 400px;
-	height: 200px;
+	width: 350px;
+	height: 150px;
 	font-size: 18px;
 	border-radius: 4px;
+	padding: 20px;
 	display: block;
 	top: 20px;left: 20px;
 	position: relative;
 	resize: none;
+}
+
+.inputright #group{
+	top: 40px;
+}
+
+.checkbix {
+	height: 18px !important;
+}
+
+.info-checkbox{
+	top: 50px;
+	width: 300px;
+	position:relative;
+}
+
+.group-col{
+	float: left;
 }
 
 .info-input #joinusnow{
