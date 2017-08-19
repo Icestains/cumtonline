@@ -6,11 +6,6 @@
 
 body,html{
 	min-width: 1280px;
-
-}
-
-main{
-
 }
 
 header{
@@ -56,7 +51,7 @@ header li{
 	position: relative;
 }
 
-.focus{
+.focus:hover{
 	background: #8fc540;
 	border-radius: 4px;
 }
@@ -70,11 +65,11 @@ header a{
 	cursor: auto;
 }
 
-.cumtonline{/*
-	height: 988px;*/
-	padding-top: 50%;
+.cumtonline{
+	height: 100%;
+	padding-top: 53%;
 	color: #ffffff;
-	background: #a98761;
+	background: #66ccff;
 	position: relative;
 }
 
@@ -151,6 +146,12 @@ header a{
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
+	opacity: 0.5;
+}
+
+.arrow:hover{
+	/*background: rgba(0,0,0,0.1);*/
+	opacity: 0.8;
 }
 
 .product .perv{
@@ -268,61 +269,170 @@ header a{
 }
 
 .joinUs{
-	/*height: 1000px;*/
-	padding-top: 40%;
-
+	height: 800px;
 	background: #f2f2f2;
 	position: relative;
 }
 
-.joinUs span{
-	font-size: 30px;
+.ju_sp span{
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
 }
 
-.joinUs #ju_sp1{
+.ju_sp #ju_sp1{
 	font-size: 30px;
-	top: 80px;
+	top: 50px;
 }
 
-.joinUs #ju_sp2{
+.ju_sp #ju_sp2{
 	font-size: 20px;
-	top: 130px;
+	top: 100px;
 }
 
 .info-input{
-	width: 1200px;
+	width: 1000px;
+	height: 550px;
 	top: 200px;
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
 }
 
-.joinUs input{
-	width: 200px;
+.inputleft,.inputright{
+	width: 500px;
+	height: 500px;
+	float: left;
+	position: relative;
+}
+
+.inputleft .forms{
+	width: 500px;
+	height: 70px;
+	position: relative;
+	display: block; 
+}
+
+.inputleft span{
+	font-size: 22px;
+	line-height: 46px;	
+	margin: 0 20px;
+	float: left;
+}
+
+.inputleft input{
+	width: 300px;
 	height: 46px;
-	font-size: 16px;
-	text-align: left;
-	margin:4px;
-	padding-left: 10px;
+	font-size: 20px;
+	line-height: 46px;
+	padding-left: 20px;
 	border-radius: 4px;
 }
 
-.info-input #power{
-	width: 900px;
+.inputleft select{
+	width: 320px;
+	height: 46px;
+	font-size: 20px;
+	border-radius: 4px;
+}
+
+.magic-radio {
+	box-sizing: border-box;
+	padding: 0;
+	display: none;
+}
+
+.magic-radio+label:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+.magic-radio:checked+label:after {
+	display: block;
+}
+
+.magic-radio+label.radio-label:after {
+	top: 7px;
+	left: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #98D509;
+}
+/*before*/
+
+.radio-label:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	content: '';
+	border: 2px solid #c0c0c0;
+	border-radius: 50%;
+}
+
+.radio-label {
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	cursor: pointer;
+	vertical-align: middle;
+	color: black;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.radio-label:hover:before {
+	border: 2px solid #98D509;
+}
+
+.magic-radio:checked+label.radio-label:before {
+	border: 2px solid #98D509;
+}
+
+.radio-wrap {
+	float: left;
+	/*调整选择框左右间距*/
+	margin-right: 24px;
+	/*调整选择框高度*/
+	margin-top: 12px;
+}
+
+.inputright span{
+	font-size: 22px;
+	margin: 20px;
+	position: relative;
+}
+
+.inputright #power{
+	width: 400px;
+	height: 200px;
+	font-size: 18px;
+	border-radius: 4px;
+	display: block;
+	top: 20px;left: 20px;
+	position: relative;
+	resize: none;
 }
 
 .info-input #joinusnow{
+	cursor: pointer;
+	width: 200px;
+	height: 46px;
 	font-size: 20px;
 	color: #ffffff;
 	background: #8fc540;
 	text-align: center;
+	left: 400px;
+	bottom: 50px;
+	border-radius: 4px;
+	position: absolute;
 }
 
 footer{
-	/*height: 400px;*/
-	padding-bottom: 20%;
-
+	height: 400px;
 }
