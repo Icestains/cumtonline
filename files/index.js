@@ -1,3 +1,5 @@
+// 动态隐藏导航栏js部分
+
 var new_scroll_position = 0;
 var last_scroll_position;
 var header = document.getElementById("header");
@@ -20,5 +22,4 @@ window.addEventListener('scroll', function(e) {
 
   new_scroll_position = last_scroll_position;
 });
-
 

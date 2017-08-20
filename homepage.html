@@ -3,18 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>cumtonline</title>
-
+	
+	<!-- 整体样式 -->
 	<link rel="stylesheet" href="./files/style.css">
+	<!-- 表单提交部分分组选择样式（移植） -->
 	<link rel="stylesheet" href="./files/checkBox.css">
 
 
 </head>
 <body>
+<!-- 导航栏部分 -->
 	<header id="header">
+
+		<!-- 半透明背景 -->
 		<div class="background"></div>
 
-		<img src="./files/imgs/FLYING_STUDIO.png" alt="FLYING_STUDIO_icon">
-		
+		<!-- 学生在线logo -->
+		<img id="logo" src="./files/imgs/FLYING_STUDIO.png" alt="FLYING_STUDIO_icon">
+
+		<!-- 导航栏链接 -->
 		<ul>
 			<li class="focus"><a href="#cumtonline">首页</a></li>
 			<li class="focus"><a href="#product">产品</a></li>
@@ -24,49 +31,67 @@
 		</ul>
 
 	</header>
+<!-- 导航栏部分 -->
 
+<!-- 首屏 学生在线介绍 -->
 	<section class="cumtonline" id="cumtonline">
+
 		<span>学生在线</span>
 		<p>学生在线成立于2000年10月，是矿大最好的学生互联网平台。<br>
 		这里汇聚了技术精湛的编程高手、热爱艺术的设计精英、认真严谨的办公管理、统筹兼顾的运营俊杰和激情澎湃的视频能人，用充足的活力奇妙的创意更新着学生在线，用扎实的基础创新的理念凝聚着学生在线。<br>
 		我们秉承着“学生在线，在线为学生”的宗旨，致力于营造健康向上的校园文化氛围，促进校园网络的快速发展，积极为广大同学提供良好的网络信息服务。</p>
+		
+		<a id="learnmore" href="#introduction">LEARN MORE</a>
 
-		<input type="button" id="learnmore" value="LEARN MORE">
-
-		<img src="./files/imgs/Play_Button.png" alt="">
+		<!-- 预计会添加一个背景视频 预留播放按钮 -->
+		<img id="play_button" src="./files/imgs/Play_Button.png" alt="play_button">
 
 	</section>
+<!-- 首屏 学生在线介绍 -->
 
+<!-- 学生在线产品介绍 -->
 	<section class="product" id="product">
+		
+		<!-- 产品介绍主体 -->
 		<div class="production">
 			<h2>矿大浏览器</h2>
 			<p>矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器矿大浏览器</p>
-			<!-- <img src="./files/imgs/browser.png" alt=""> -->
-			<img src="" alt="">
+
+			<!-- 图片 -->
+			<img src="./files/imgs/browser.png" alt="">
+			<!-- <img src="" alt=""> -->
+
 		</div>
 
+		<!-- 左右按钮 -->
 		<img class="perv arrow" src="./files/imgs/perv.png" >
 		<img class="next arrow" src="./files/imgs/next.png" >
 
 	</section>
+<!-- 学生在线产品介绍 -->
 
+<!-- needus -->
 	<section class="need us">
 
-		<p>我们可以帮你实现 :  )</p>
-		<input type="button" id="needUs" value="need us" >
+		<p>我们可以帮你实现 : )</p>
+		<a href="#jU"><input type="button" id="needUs" value="need us" ></a>
 
 	</section>
+<!-- needus -->
 
+<!-- 部门介绍 -->
 	<section class="introduction" id="introduction">
 		
 		<span id="intro-1">部门介绍</span><br>
 
 		<span id="intro-2">在这里的每个人成就了学生在线</span><br>
 
+		<!-- 介绍主体部分 -->
 		<div class="intr">
 			
 			<!-- <img src="./files/imgs/intr1.jpg" alt="" width="100%"><br> -->
-			<img src="" alt="" width="100%" height="400px" ><br>
+			<img id="intr_pht" src="" alt="" >
+
 		
 			<span id="intro-3">口号</span><br>
 
@@ -76,57 +101,73 @@
 
 		</div>
 
-		
-
 	</section>
+<!-- 部门介绍 -->
 
+<!-- joinus -->
 	<section class="join us">
 
-		<p>我们就在找你 :  )</p>
+		<p>我们就在找你 : )</p>
+
 		<a href="#jU"><input type="button" id="joinUs" value="join us"></a>
 
 	</section>
+<!-- joinus -->
 
+<!-- 例会分享内容链接 -->
 	<section class="meeting" id="meeting">
-
+		
+		<!-- 标题 -->
 		<span id="name">17.09.01大例会</span>
 
+		<!-- 分组 -->
 		<ul id="list">
-			<li>前端</li>
-			<li>后端</li>
-			<li>移动</li>
-			<li>视觉</li>
-			<li>视频</li>
-			<li>办公</li>
+			<li><a href="">前端</a></li>
+			<li><a href="">后端</a></li>
+			<li><a href="">移动</a></li>
+			<li><a href="">视觉</a></li>
+			<li><a href="">视频</a></li>
+			<li><a href="">办公</a></li>
 		</ul>
 		
-		<input type="button" id="more" value="MORE">
-
-		<img src="" alt="" width="600px" height="400px;" >
+		<!-- 了解更多 链接是工作室的博客 -->
+		<a href="http://blog.flyingstudio.online/">
+			<input type="button" id="more" value="MORE">
+		</a>
+		
+		<!-- 预留图片 -->
+		<img id="meeting_img" src="" alt="" >
 
 	</section>
+<!-- 例会分享内容链接 -->
 
+<!-- 加入我们表单部分 -->
 	<section class="joinUs" id="jU">
 
+		<!-- title -->
 		<div class="ju_sp">
 			<span id="ju_sp1">立即加入我们</span><br>
 
 			<span id="ju_sp2">暂时还没编出话来...</span>
 		</div>
+		<!-- title -->
 		
+		<!-- 输入部分 -->
 		<div class="info-input">
 
+			<!-- 左半部分 -->
 			<div class="inputleft">
 
+				<!-- 姓名 -->
 				<div class="forms">
 					<span>姓名</span>
 					<input type="text" value="" placeholder="姓名">
 				</div>
 
+				<!-- 性别 -->
 				<div class="forms">
 
 					<span>性别</span>
-					<!-- <input type="text" name="gender"> -->
 
 					<div class="radio-wrap">
 						<input type="radio" id="man" class="magic-radio" value="男" name="gender">
@@ -140,9 +181,9 @@
 
 				</div>
 
+				<!-- 学院选择框 -->
 				<div class="forms">
 					<span>学院</span>
-					<!--<input type="text" name="college">-->
 					<select class="valid">
 						<option value="请选择学院">请选择学院</option>
 						<option value="能源材料物理学部">能源材料物理学部</option>
@@ -168,34 +209,41 @@
 					</select>
 				</div>
 
+				<!-- 班级 -->
 				<div class="forms">
 					<span>班级</span>
 					<input type="text" value="" placeholder="XX级XX班">
 				</div>
 
+				<!-- 电话 -->
 				<div class="forms">
 					<span>电话</span>
 					<input type="text" value="" placeholder="1XX-XXXX-XXXX">
 				</div>
 
+				<!-- qq -->
 				<div class="forms">
-					<span>Q Q</span>
+					<span>Q&nbsp;Q&nbsp;</span>
 					<input type="text" value="" placeholder="QQ">
 				</div>
 				
+				<!-- 邮箱 -->
 				<div class="forms">
 					<span>邮箱</span>
 					<input type="text" value="" placeholder="example@example.com">
 				</div>
-
 				
 			</div>
-			
-			<div class="inputright">
-				<span>能力和期待</span>
-				<textarea id="power" placeholder="个人简介包括特长，爱好，相关经验等。如有相关作品，可发到邮箱online_cumt@foxmail.com,
-邮件名为:学生在线招新+名字"></textarea> 
+			<!-- 左半部分 -->
 
+			<!-- 右半部分 -->
+			<div class="inputright">
+
+				<!-- 个人简介 -->
+				<span>个人简介</span>
+				<textarea id="power" placeholder="个人简介包括特长，爱好，相关经验等。如有相关作品，可发到邮箱online_cumt@foxmail.com,邮件名为:学生在线招新+名字"></textarea>
+
+				<!-- 小组选项 (移植)-->
 				<div class="forms" id="apply-group">
 
 					<span id="group">申请小组</span>
@@ -255,20 +303,32 @@
 
 					</div>
 				</div>
+
 			</div>
+			<!-- 右半部分 -->
 			
 			<input type="button" id="joinusnow" value="加入我们">
 
 		</div>
+		<!-- 输入部分 -->
+
 
 		
 
 	</section>
+<!-- 加入我们表单部分 -->
 
-	<footer>footer</footer>
+<!-- 注脚 -->
+	<footer>
+		footer
+	</footer>
+<!-- 注脚 -->
 
+
+<!-- js链接 -->
 	<script src="./files/index.js"></script>
 	<script src="./files/checkBox.js"></script>
+<!-- js链接 -->
 
 </body>
 </html>
