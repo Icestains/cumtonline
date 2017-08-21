@@ -148,8 +148,9 @@ header a{
 /*首屏播放按钮*/
 .cumtonline #play_button{
 	position: absolute;
-	bottom: 100px;
+	bottom: 10%;
 	left: 50%;
+	max-height: 10%;
 	cursor:pointer;
 	transform: translateX(-50%) translateY(50%);
 }
@@ -395,7 +396,7 @@ header a{
 .inputleft .forms{
 	position: relative;
 	display: block; 
-	width: 500px;
+	width: 400px;
 	height: 60px;
 }
 
@@ -409,6 +410,7 @@ header a{
 
 /*表单提交部分 主体 表格*/
 .inputleft input{
+	float: right;
 	width: 300px;
 	height: 46px;
 	font-size: 20px;
@@ -419,6 +421,7 @@ header a{
 
 /*表单提交部分 主体 学院选择*/
 .inputleft select{
+	float: right;
 	width: 310px;
 	height: 46px;
 	font-size: 20px;
