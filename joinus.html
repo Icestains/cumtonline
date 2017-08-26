@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forms</title>
+
+	<link rel="stylesheet" href="./files/css/forms.css">
+
+</head>
+<body>
+
+<!-- 加入我们表单部分 -->
+<div class="container">
+	
+	<form class="join-us" id="join-us">
+
+		<!-- title -->
+		<div class="join-us-span">
+
+			<span id="join-us-sp1">立即加入我们</span>
+
+			<span id="join-us-sp2">暂时还没编出话来...</span>
+			
+		</div>
+		<!-- title -->
+		
+		<!-- 输入部分 -->
+		<div class="join-us-info">
+
+			<!-- 左半部分 -->
+			<div class="info-left">
+
+				<!-- 姓名 -->
+				<div class="info-forms" >
+					<span class="forms-ico" id="b1"></span>
+					<span class="title">姓名</span>
+					<input type="text" value="" placeholder="姓名" name="name">
+				</div>
+
+				<!-- 性别 -->
+				<div class="info-forms">
+
+					<span class="title">性别</span>
+					
+					<div class="forms-gender" >
+
+						<div class="info-radio">
+							<input type="radio" id="man" class="magic-radio" value="男" name="gender">
+							<label class="radio-label" for="man">男</label>
+						</div>
+
+						<div class="info-radio">
+							<input type="radio" id="woman" class="magic-radio" value="女" name="gender">
+							<label class="radio-label" for="woman">女</label>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- 学院选择框 -->
+				<div class="info-forms">
+					<span class="forms-ico" id="b2"></span>
+
+					<span class="title">学院</span>
+					<select class="college" name="college">
+						<option value="请选择学院">--请选择学院--</option>
+						<option value="能源材料物理学部">能源材料物理学部</option>
+						<option value="矿业工程学院">矿业工程学院</option>
+						<option value="安全工程学院">安全工程学院</option>
+						<option value="力学与土木工程学院">力学与土木工程学院</option>
+						<option value="机电工程学院">机电工程学院</option>
+						<option value="信息与控制工程学院">信息与控制工程学院</option>
+						<option value="资源与地球科学学院">资源与地球科学学院</option>
+						<option value="化工学院">化工学院</option>
+						<option value="环境与测绘学院">环境与测绘学院</option>
+						<option value="电气与动力工程学院">电气与动力工程学院</option>
+						<option value="数学学院">数学学院</option>
+						<option value="计算机科学与技术学院">计算机科学与技术学院</option>
+						<option value="管理学院">管理学院</option>
+						<option value="公共管理学院">公共管理学院</option>
+						<option value="马克思主义学院">马克思主义学院</option>
+						<option value="外国语言文化学院">外国语言文化学院</option>
+						<option value="建筑设计学院">建筑设计学院</option>
+						<option value="孙越崎学院">孙越崎学院</option>
+						<option value="国际学院">国际学院</option>
+						<option value="职业与继续教育部">职业与继续教育部</option>
+					</select>
+				</div>
+
+				<!-- 班级 -->
+				<div class="info-forms">
+					<span class="forms-ico" id="b3"></span>
+
+					<span class="title">班级</span>
+					<input type="text" value="" placeholder="XX级XX班" name="classes">
+				</div>
+
+				<!-- 电话 -->
+				<div class="info-forms">
+					<span class="forms-ico" id="b4"></span>
+					<span class="title">电话</span>
+					<input type="text" value="" placeholder="1XX-XXXX-XXXX" name="telephone">
+				</div>
+
+				<!-- qq -->
+				<div class="info-forms">
+					<span class="forms-ico" id="b5"></span>
+					<span class="title">Q&nbsp;Q</span>
+					<input type="text" value="" placeholder="QQ" name="qqnumber">
+				</div>
+				
+				<!-- 邮箱 -->
+				<div class="info-forms">
+					<span class="forms-ico" id="b6"></span>
+					<span class="title">邮箱</span>
+					<input type="text" value="" placeholder="example@example.com" name="email">
+				</div>
+				
+			</div>
+			<!-- 左半部分 -->
+
+			<!-- 右半部分 -->
+			<div class="info-right">
+
+				<div class="info-profile">
+					<!-- 个人简介 -->
+					<span class="tilte">个人简介</span>
+					<textarea id="power" placeholder="个人简介包括特长，爱好，相关经验等。如有相关作品，可发到邮箱online_cumt@foxmail.com,邮件名为:学生在线招新+名字"></textarea>
+				</div>
+
+
+				<!-- 小组选项 (移植)-->
+				<div id="info-apply-group">
+
+					<span id="info-group">申请小组</span>
+
+					<div class="checkbox">
+
+					<div class="group-left">
+      					<div> 
+						 	<input id="d1" type="checkbox" name="theGroup" value="视觉设计" class="checkbix info-checkbox" data-text="视觉设计">
+						 	<label aria-label="" role="checkbox" for="d1" class="checkbix">
+						 	<span class=""></span>视觉设计</label>
+     					</div>
+
+						<div>
+       						<input id="d2" type="checkbox" name="theGroup" value="前端" class="checkbix info-checkbox" data-text="前端组">
+       						<label aria-label="" role="checkbox" for="d2" class="checkbix">
+       						<span class=""></span>前端组</label>
+      					</div>
+
+						<div>
+        					<input id="d3" type="checkbox" name="theGroup" value="后端" class="checkbix info-checkbox" data-text="后端组">
+        					<label aria-label="" role="checkbox" for="d3" class="checkbix">
+        					<span class=""></span>后端组</label>
+      					</div>
+
+						<div>
+        					<input id="d4" type="checkbox" name="theGroup" value="移动互联" class="checkbix info-checkbox" data-text="移动互联组">
+        					<label aria-label="" role="checkbox" for="d4" class="checkbix">
+        					<span class=""></span>移动互联组</label>
+      					</div>
+
+					</div> 
+
+
+					<div class="group-right">
+
+	  					<div>
+	  						<input id="d5" type="checkbox" name="theGroup" value="视频" class="checkbix info-checkbox" data-text="视频组">
+	  						<label aria-label="" role="checkbox" for="d5" class="checkbix">
+	  						<span class=""></span>视频组</label>
+	  					</div>
+
+	  					<div>
+	  						<input id="d6" type="checkbox" name="theGroup" value="办公" class="checkbix info-checkbox" data-text="办公组">
+	  						<label aria-label="" role="checkbox" for="d6" class="checkbix">
+	  						<span class=""></span>办公组</label>
+	  					</div>
+
+	  					<div>
+	  						<input id="d7" type="checkbox" name="theGroup" value="运营" class="checkbix info-checkbox" data-text="运营组">
+	  						<label aria-label="" role="checkbox" for="d7" class="checkbix">
+	  						<span class=""></span>运营组</label>
+	  					</div>
+
+					</div>
+
+
+					</div>
+				</div>
+				
+				<p class="group-type" id="introduction"></p>
+
+			</div>
+			<!-- 右半部分 -->
+			<div class="info-submit">
+				<input type="submit" id="joinusnow" value="加入我们">
+			</div>
+
+		</div>
+		<!-- 输入部分 -->
+	</form>
+
+</div>
+<!-- 加入我们表单部分 -->
+	
+</body>
+</html>
