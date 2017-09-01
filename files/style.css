@@ -6,22 +6,15 @@
 }
 
 /*pc页面最小宽度*/
-body{
-	/*overflow: auto;*/
-	/*margin:0 auto;*/
-	min-width: 1240px;
-}
-
-.sections{
-	margin:0 auto;
-	max-width: 1920px;
+body,html{
+	min-width: 1280px;
 }
 
 /*导航栏位置大小*/
 header{
 	position: fixed;
-	margin:0 auto;
 	z-index: 999;
+	min-width: 1280px;
 	width: 100%;
 	height: 100px;
 }
@@ -111,17 +104,11 @@ header a{
 /*首屏样式*/
 .cumtonline{
 	position: relative;
-	top: 0;
-	left: 0;
 	height: 100vh;
 	color: #ffffff;
-	/*background: url(backgrd1.jpg);*/
+	background: #66ccff;
 }
 
-.cumtonline #backgrd1{
-	width: 100%;
-	height: 100vh;
-}
 /*首屏标题*/
 .cumtonline span{
 	position: absolute;
@@ -161,58 +148,52 @@ header a{
 /*首屏播放按钮*/
 .cumtonline #play_button{
 	position: absolute;
-	bottom: 10%;
+	bottom: 100px;
 	left: 50%;
-	max-height: 10%;
 	cursor:pointer;
 	transform: translateX(-50%) translateY(50%);
 }
 
 /*产品介绍*/
 .product{
+	height: 90vh;
+	/*height: 1000px;*/
 	position: relative;
-	width: 100%;
-	margin:0 auto;
 }
 
 /*产品介绍 标题*/
 .production h2{
-	z-index: 1;
-	position: absolute;
+	position: absolute; 
 	top: 20%;
-	left: 50%;
+	left: 20%;
 }
 
 /*产品介绍 内容*/
 .production p{
-	z-index: 1;
 	position: absolute; 
 	top: 40%;
-	left: 50%;
+	left: 20%;
 	transform: translateY(-50%);
-	width: 350px;
+	width: 500px;
 }
 
 /*产品介绍 图片*/
 .production img{
-	z-index: 0;
 	position: absolute;
 	top: 50%;
-	left: 30%;
-	overflow: hidden;
+	left: 70%;
 	transform:translate(-50%,-50%);
-	height: 100%;
-	/*background: #8fc540;*/
+	width: 700px;
+	height: 600px;
+	background: #8fc540;
 }
 
 /*产品介绍 左右切换按钮*/
 .product .arrow{
 	cursor: pointer;
-	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 50px;
-	height: 200px;
+	position: absolute;
 	opacity: 0.5;
 }
 
@@ -234,8 +215,8 @@ header a{
 /*needus joinus共用样式*/
 .us{
 	position: relative;
-	width: 100%;
-	height: 100px;
+	height: 10vh;
+	/*height: 100px;*/
 	font-size: 24px;
 	line-height: 100px;
 	text-align: center;
@@ -260,17 +241,9 @@ header a{
 /*部门介绍*/
 .introduction{
 	position: relative;
-	height: 800px;
+	height: 90vh;
 	/*height: 900px;*/
 	text-align: center;
-}
-
-.intr-main{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	height: 100%;
-	width: 600px;
 }
 
 /*部门介绍 title*/
@@ -281,7 +254,7 @@ header a{
 
 /*部门介绍 title1*/
 .introduction #intro-1{
-	top: 4%;
+	top: 5%;
 	font-size: 30px;
 }
 
@@ -293,18 +266,17 @@ header a{
 /*部门介绍 主体*/
 .introduction .intr{
 	position: absolute;
-	bottom: 0;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
 	width: 600px;
-	height: 80%;
 }
 
 /*部门介绍 主体图片*/
 .intr #intr_pht{
 	display: block;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	width:100%;
+	width:600px;
+	height:400px;
 	background: #8fc540;
 }
 
@@ -325,7 +297,7 @@ header a{
 /*例会内容*/
 .meeting{
 	position: relative;
-	height: 650px;
+	height: 750px;
 	text-align: left;
 }
 
@@ -368,14 +340,218 @@ header a{
 /*例会内容 图片*/
 .meeting #meeting_img{
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 50%;
-	transform: translateY(-50%);
-	/*width:30%;*/
-	height: 50%
+	width:600px;
+	height:450px;
 	background: #8fc540;
 }
 
+/*表单提交部分*/
+.joinUs{
+	position: relative;
+	height: 800px;
+	background: #f2f2f2;
+}
 
+/*表单提交部分 title*/
+.ju_sp span{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
-/*注脚在footer.css文件*/
+/*表单提交部分 title1*/
+.ju_sp #ju_sp1{
+	top: 50px;
+	font-size: 30px;
+}
+
+/*表单提交部分 title2*/
+.ju_sp #ju_sp2{
+	top: 100px;
+	font-size: 20px;
+}
+
+/*表单提交部分 主体*/
+.info-input{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1000px;
+	height: 550px;
+}
+
+/*表单提交部分 主体 左右共用*/
+.inputleft,.inputright{
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 500px;
+}
+
+/*表单提交部分 主体 表格*/
+.inputleft .forms{
+	position: relative;
+	display: block; 
+	width: 500px;
+	height: 60px;
+}
+
+/*表单提交部分 主体 表格标题*/
+.inputleft span{
+	float: left;
+	margin: 0 20px;
+	font-size: 22px;
+	line-height: 46px;
+}
+
+/*表单提交部分 主体 表格*/
+.inputleft input{
+	width: 300px;
+	height: 46px;
+	font-size: 20px;
+	line-height: 46px;
+	padding-left: 10px;
+	border-radius: 4px;
+}
+
+/*表单提交部分 主体 学院选择*/
+.inputleft select{
+	width: 310px;
+	height: 46px;
+	font-size: 20px;
+	border-radius: 4px;
+}
+
+/*性别勾选框*/
+.magic-radio {
+	display: none;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.magic-radio+label:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+.magic-radio:checked+label:after {
+	display: block;
+}
+
+.magic-radio+label.radio-label:after {
+	top: 7px;
+	left: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #98D509;
+}
+/*before*/
+
+.radio-label:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	content: '';
+	border: 2px solid #c0c0c0;
+	border-radius: 50%;
+}
+
+.radio-label {
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	cursor: pointer;
+	vertical-align: middle;
+	color: black;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.radio-label:hover:before {
+	border: 2px solid #98D509;
+}
+
+.magic-radio:checked+label.radio-label:before {
+	border: 2px solid #98D509;
+}
+
+.radio-wrap {
+	float: left;
+	/*调整选择框左右间距*/
+	margin-right: 24px;
+	/*调整选择框高度*/
+	margin-top: 12px;
+}
+/*性别勾选框*/
+
+/*表单提交部分 主体 右侧*/
+.inputright span{
+	position: relative;
+	margin: 20px;
+	font-size: 22px;
+}
+
+/*表单提交部分 主体 简介*/
+.inputright #power{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	display: block;
+	width: 350px;
+	height: 150px;
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 4px;
+	resize: none;
+}
+
+/*表单提交部分 主体 分组*/
+.inputright #group{
+	top: 40px;
+}
+
+/*表单提交部分 主体 分组选择*/
+.checkbix {
+	height: 18px !important;
+}
+
+/*表单提交部分 主体 分组外框*/
+.info-checkbox{
+	position:relative;
+	top: 50px;
+	width: 300px;
+}
+
+/*表单提交部分 主体 分组内框*/
+.group-col{
+	float: left;
+}
+
+/*表单提交部分 主体 提交按钮*/
+.info-input #joinusnow{
+	position: absolute;
+	left: 400px;
+	bottom: 50px;
+	width: 200px;
+	height: 46px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	background: #8fc540;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/*注脚*/
+footer{
+	height: 400px;
+}
