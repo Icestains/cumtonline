@@ -1,0 +1,381 @@
+/*去除边框 初始化*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/*pc页面最小宽度*/
+body{
+	/*overflow: auto;*/
+	/*margin:0 auto;*/
+	min-width: 1240px;
+}
+
+.sections{
+	margin:0 auto;
+	max-width: 1920px;
+}
+
+/*导航栏位置大小*/
+header{
+	position: fixed;
+	margin:0 auto;
+	z-index: 999;
+	width: 100%;
+	height: 100px;
+}
+
+/*导航栏半透明背景*/
+header .background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5
+}
+
+/*logo*/
+header #logo{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+	height: 60%;
+}
+
+/*导航栏链接*/
+header ul{
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translateY(-50%);
+	height: 50%;
+	text-align: center;
+}
+
+header li{
+	position: relative;
+	display: inline;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	list-style-type: none;
+}
+
+/*导航栏链接鼠标覆盖时样式*/
+.focus:hover{
+	background: #8fc540;
+	border-radius: 4px;
+}
+
+/*导航栏链接样式*/
+header a{
+	padding:30px 20px 30px;
+	font-size: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: auto;
+}
+
+/*动态隐藏导航栏动画*/
+.slideUp {
+ /* -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);*/
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+/*动态隐藏导航栏动画*/
+.slideDown {
+  /*-webkit-transform: translateY(0);
+  transform: translateY(0);*/
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+/*首屏样式*/
+.cumtonline{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	color: #ffffff;
+	/*background: url(backgrd1.jpg);*/
+}
+
+.cumtonline #backgrd1{
+	width: 100%;
+	height: 100vh;
+}
+/*首屏标题*/
+.cumtonline span{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	font-size: 50px;
+}
+
+/*首屏内容*/
+.cumtonline p{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	width: 600px;
+	font-size: 20px;
+	line-height: 30px;
+	word-break: break-all;
+}
+
+/*首屏了解更多按钮*/
+.cumtonline #learnmore{
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	width: 160px;
+	height: 50px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	background: #8fc540;
+	border-radius: 4px;
+	cursor:pointer;
+}
+
+/*首屏播放按钮*/
+.cumtonline #play_button{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	max-height: 10%;
+	cursor:pointer;
+	transform: translateX(-50%) translateY(50%);
+}
+
+/*产品介绍*/
+.product{
+	position: relative;
+	width: 100%;
+	margin:0 auto;
+}
+
+/*产品介绍 标题*/
+.production h2{
+	z-index: 1;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+
+/*产品介绍 内容*/
+.production p{
+	z-index: 1;
+	position: absolute; 
+	top: 40%;
+	left: 50%;
+	transform: translateY(-50%);
+	width: 350px;
+}
+
+/*产品介绍 图片*/
+.production img{
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	overflow: hidden;
+	transform:translate(-50%,-50%);
+	height: 100%;
+	/*background: #8fc540;*/
+}
+
+/*产品介绍 左右切换按钮*/
+.product .arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 200px;
+	opacity: 0.5;
+}
+
+/*产品介绍 左右切换按钮hover样式*/
+.arrow:hover{
+	opacity: 0.8;
+}
+
+/*产品介绍 左切换按钮*/
+.product .perv{
+	left: 40px;
+}
+
+/*产品介绍 右切换按钮*/
+.product .next{
+	right: 40px;
+}
+
+/*needus joinus共用样式*/
+.us{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	font-size: 24px;
+	line-height: 100px;
+	text-align: center;
+	background: #f9f9f9;
+}
+
+/*needus joinus 按钮共用样式*/
+.us input{
+	position: absolute;
+	top: 50%;
+	left: 62%;
+	width: 120px;
+	height: 40px;
+	font-size: 24px;
+	color: white;
+	background: #8fc540;
+	border-radius: 4px;
+	cursor:pointer;
+	transform: translateY(-50%);
+}
+
+/*部门介绍*/
+.introduction{
+	position: relative;
+	height: 800px;
+	/*height: 900px;*/
+	text-align: center;
+}
+
+.intr-main{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 600px;
+}
+
+/*部门介绍 title*/
+.introduction #intro-1,#intro-2{
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+/*部门介绍 title1*/
+.introduction #intro-1{
+	top: 4%;
+	font-size: 30px;
+}
+
+/*部门介绍 title2*/
+.introduction #intro-2{
+	top: 10%;
+}
+
+/*部门介绍 主体*/
+.introduction .intr{
+	position: absolute;
+	bottom: 0;
+	width: 600px;
+	height: 80%;
+}
+
+/*部门介绍 主体图片*/
+.intr #intr_pht{
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width:100%;
+	background: #8fc540;
+}
+
+/*部门介绍 主体 口号 组名*/
+.introduction #intro-3,#intro-4{
+	float: left;
+	clear: both;
+	padding: 10px 0;
+}
+
+/*部门介绍 主体内容*/
+.introduction p{
+	text-align: left;
+	clear: both;
+	line-height: 60px;
+}
+
+/*例会内容*/
+.meeting{
+	position: relative;
+	height: 650px;
+	text-align: left;
+}
+
+/*例会内容 title*/
+.meeting #name{
+	top: 10%;
+	left: 20%;
+	position: absolute;
+	font-size: 30px;
+}
+
+/*例会内容 列表*/
+.meeting #list{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	line-height: 50px;
+}
+
+/*例会内容 链接*/
+.meeting a{
+	font-size: 18px;
+	color: black;
+}
+
+/*例会内容 更多按钮*/
+.meeting #more{
+	position: absolute;
+	left: 20%;
+	top: 70%;
+	width: 120px;
+	padding: 15px;
+	font-size: 18px;
+	color: #ffffff;
+	background: #8fc540;
+	border-radius: 4px;
+	cursor:pointer;
+}
+
+/*例会内容 图片*/
+.meeting #meeting_img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	/*width:30%;*/
+	height: 50%
+	background: #8fc540;
+}
+
+
+
+/*注脚在footer.css文件*/

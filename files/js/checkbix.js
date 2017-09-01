@@ -1,3 +1,6 @@
+// 分组选择框js部分
+
+
 /* global define, exports: true, module*/
 (function(root, factory) {
 	'use strict';

@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	list-style-type: none;
+	
+}
+
+footer{
+	display: flex;
+	min-width: 1240px;
+	height: 200px;
+	padding-top: 40px;
+	justify-content: space-around;
+	background: #404040;
+}
+
+footer .footerall{
+	display: flex;
+	justify-content: center;
+	width: 1240px;
+	/*background: yellow;*/
+}
+
+footer .box1{
+	width: 90px;
+}
+
+.box2{
+	width: 300px;
+}
+
+.box3{
+	/*position: relative;*/
+	width: 400px;
+}
+
+
+.box-title{
+	font-size: 14px;
+	color: #fe9b00;
+}
+
+footer .urls{
+}
+
+footer ul{
+	line-height: 18px;
+}
+
+footer a{
+	text-decoration: none;
+	color: gray;
+	font-size: 14px;
+}
+
+.bottom-info{
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	line-height: 20px;
+	color: gray;
+}
+.box3 li{
+	position: relative;
+	top: 30px;
+}
+.bottom-button{
+	margin:0 22px;
+	width: 44px;
+}
+
+.qrcode{
+	display: none;
+	position: absolute;
+	top: -150px;
+	height: 120px;
+	width: 120px;
+	left: -20px;
+	
+}
+
+.weibo .qrcode{
+	left: 120px;
+}
+
