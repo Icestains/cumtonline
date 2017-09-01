@@ -376,6 +376,7 @@ header a{
 	background: #8fc540;
 }
 
+<<<<<<< HEAD
 /*表单提交部分*/
 .joinUs{
 	position: relative;
@@ -586,3 +587,8 @@ header a{
 footer{
 	height: 400px;
 }
+=======
+
+
+/*注脚在footer.css文件*/
+>>>>>>> master

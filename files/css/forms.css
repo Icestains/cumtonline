@@ -7,18 +7,27 @@
 	background: #f2f2f2;
 }
 
+<<<<<<< HEAD
 .join-us{
+=======
+.joinUs .join-us{
+>>>>>>> master
 	margin:0 auto;
 	width: 1240px;
 	height: 800px;
 }
 
+<<<<<<< HEAD
 .join-us-span{
+=======
+.joinUs .join-us-span{
+>>>>>>> master
 	height: 150px;
 	line-height: 60px;
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .join-us-span span{
 	display: block;
 }
@@ -32,12 +41,28 @@
 }
 
 .info-left,.info-right{
+=======
+.joinUs .join-us-span span{
+	display: block;
+}
+
+.joinUs #join-us-sp1{
+	font-size: 24px;
+}
+
+.joinUs .join-us-info{
+	height: 680px;
+}
+
+.joinUs  .info-left,.info-right{
+>>>>>>> master
 	float: left;
 	/*margin: 0 auto;*/
 	width: 50%;
 	height: 420px;
 }
 
+<<<<<<< HEAD
 /*.info-right{
 	position: relative;
 	left: 150px;
@@ -45,12 +70,19 @@
 
 
 .info-forms{
+=======
+.joinUs .info-forms{
+>>>>>>> master
 	position: relative;
 	height: 50px;
 	margin: 10px 0;
 }
 
+<<<<<<< HEAD
 .info-forms .title{
+=======
+.joinUs .info-forms .title{
+>>>>>>> master
 	position: absolute;
 	left: 150px;
 	float: left;
@@ -59,7 +91,11 @@
 	line-height: 40px;
 }
 
+<<<<<<< HEAD
 .info-forms input[type='text'],select{
+=======
+.joinUs .info-forms input[type='text'],select{
+>>>>>>> master
 	position: absolute;
 	left: 240px;
 	float: right;
@@ -71,6 +107,7 @@
 	border-radius: 4px;
 }
 
+<<<<<<< HEAD
 .info-forms select{
 	width: 340px;
 }
@@ -80,17 +117,36 @@
 }
 
 .info-forms input[type='radio']{
+=======
+.joinUs .info-forms select{
+	width: 340px;
+}
+
+.joinUs .info-forms input[type='text']{
+	width: 300px;
+}
+
+.joinUs .info-forms input[type='radio']{
+>>>>>>> master
 	height: 20px;
 	width: 20px;
 	vertical-align: middle;
 }
 
+<<<<<<< HEAD
 .forms-gender{
+=======
+.joinUs .forms-gender{
+>>>>>>> master
 	position: absolute;
 	left: 240px;
 }
 
+<<<<<<< HEAD
 .info-radio {
+=======
+.joinUs .info-radio {
+>>>>>>> master
 	float: left;
 	/*调整选择框左右间距*/
 	margin-left: 14px;
@@ -98,7 +154,11 @@
 	margin-top: 7px;
 }
 
+<<<<<<< HEAD
 .forms-ico{
+=======
+.joinUs .forms-ico{
+>>>>>>> master
 	z-index: 1;
 	position: absolute;
 	width: 24px;
@@ -127,18 +187,30 @@
 	background-image: url(../ico/mail.png);
 }
 
+<<<<<<< HEAD
 .info-profile{
+=======
+.joinUs .info-profile{
+>>>>>>> master
 	height: 200px;
 	margin: 10px 0;
 }
 
+<<<<<<< HEAD
 .info-profile span{
+=======
+.joinUs .info-profile span{
+>>>>>>> master
 	margin: 10px;
 	font-size: 18px;
 	float: left;
 }
 
+<<<<<<< HEAD
 .info-profile #power{
+=======
+.joinUs .info-profile #power{
+>>>>>>> master
 	width: 350px;
 	height: 150px;
 	padding: 10px;
@@ -161,7 +233,11 @@
 	font-size: 18px;
 }
 
+<<<<<<< HEAD
 .checkbox{
+=======
+.joinUs .checkbox{
+>>>>>>> master
 	display: inline;
 	position: absolute;
 	left: 100px;
@@ -170,13 +246,21 @@
 	/*margin: 10px 20px 10 20px;*/
 }
 
+<<<<<<< HEAD
 .group-left,.group-right{
+=======
+.joinUs .group-left,.group-right{
+>>>>>>> master
 	/*display: inline-block;*/
 	float: left;
 	margin-right: 40px;
 }
 
+<<<<<<< HEAD
 .info-submit{
+=======
+.joinUs .info-submit{
+>>>>>>> master
 	position: absolute;
 	top: 650px;
 	height: 40px;
