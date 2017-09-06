@@ -1,0 +1,80 @@
+
+.meeting-back{
+	position: relative;
+	min-width: 1200px;
+	height: 700px;
+	overflow: hidden;
+}
+
+.meeting{
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	z-index: 1;
+}
+
+.meeting a{
+	text-decoration: none;
+}
+
+#mt-title{
+	position: absolute;
+	top: 100px;
+	left: 48px;
+}
+
+.share{
+	position: absolute;
+	top: 170px;
+	width: 1200px;
+  	box-sizing: border-box;
+  	box-shadow: 2px 5px 30px #888888;
+  	border: 10px solid #fe9b00;
+}
+
+.s-left,.s-right{
+	float: left;
+	width: 580px;
+	height: 374px;
+}
+
+.s-left ul{
+	position: absolute;
+	top: 60px;
+	left: 80px;
+}
+
+.s-left li{
+	margin-bottom: 22px;
+	font-size: 14px;
+	line-height: 14px;
+	list-style-image: url('../ico/Shape.png')
+}
+
+.s-left a{
+	color: gray;
+}
+
+#s-more{
+	position: absolute;
+	left: 58px;
+	bottom: 56px;
+	display: block;
+	width: 140px;
+	height: 42px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 42px;
+	color: #fe9b00;
+	border: 2px solid #fe9b00;
+	border-radius: 10px;
+}
+
+.s-right{
+	float: right;
+	height: 374px;
+	overflow: hidden;
+	z-index: 999;
+}

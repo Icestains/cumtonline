@@ -1,0 +1,209 @@
+
+.joinus-back{
+	position: relative;
+	min-width: 1200px;
+	height: 650px;
+	margin-bottom: 110px;
+	background: url(../imgs/joinus-back.png) no-repeat center;
+	background-repeat: repeat-y;
+	overflow: hidden;
+}
+
+.joinus{
+	width: 1200px;
+	height: 650px;
+	margin: 0 auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.joinus-left,.joinus-right{
+	position: relative;
+	float: left;
+	width: 600px;
+	height: 650px;
+	margin:0;
+}
+
+.Cooperation{
+	position: relative;
+	top: 34px;
+}
+
+.severs{
+	position: absolute;
+	top: 120px;
+}
+
+.sever-back{
+	width: 150px;
+	height: 150px;
+	background: black;
+	opacity: .2;
+	border-radius: 50%;
+}
+
+.jl-sever{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 224px;
+	margin-right: 118px;
+}
+
+.jl-sever .sever-ico{
+	position: absolute;
+	left: 50%;top: 75px;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.jl-sever p{
+	position: relative;
+	top: 16px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.jr-title{
+	position: absolute;
+	top: 34px;
+	color: #ffffff;
+	font-size: 26px;
+}
+
+.jr-info{
+	position: relative;
+	top: 120px;
+	left: -18px;
+	width: 600px;
+	height: 430px;
+	padding:18px;
+	background: hsla(0,0%,100%,.3);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.jr-info::after{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background: url(../imgs/joinus-back.png) no-repeat right ;
+	z-index: -999;
+	filter: blur(50px);
+}
+
+.jr-info::before{
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	width: 636px;
+	height: 466px;
+	background: #000000;
+	border-radius: 10px;
+	opacity: .2;
+}
+
+.info-forms{
+	position: relative;
+	top: 6px;
+	width: 600px;
+	height: 67px;
+	margin:0;
+}
+
+.jr-info input,textarea{
+	position: absolute;
+	width: 240px;
+	height: 46px;
+	padding: 0 0 0 40px;
+	font-size: 14px;
+	color: #ffffff;
+	border-radius: 10px;
+	background: black;
+	opacity: .5;
+	z-index: 999;
+}
+
+.jr-info input:focus,textarea:focus{
+	opacity: .6;
+}
+
+#info-cls,#info-email{
+	left: 320px;
+}
+
+.info-power{
+	position: absolute;
+	top: 222px;
+	width: 600px;
+	height: 120px;
+}
+
+#info-power{
+	width: 520px;
+	height: 84px;
+	padding: 16px 40px;
+	resize: none;
+}
+
+#info-submit{
+	position: absolute;
+	bottom: 40px;
+	width: 280px;
+	padding:0;
+	font-size: 18px;
+	background: none;
+	opacity: 1;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.info-ico1,.info-ico2{
+	position: absolute;
+	top: 12px;
+	width: 22px;
+	height: 22px;
+}
+
+.info-ico1{
+	left: 12px;	
+}
+
+.info-ico2{
+	left: 332px;
+}
+
+#ico1{
+	background: url(../ico/personal.png) no-repeat;
+}
+
+#ico2{
+	background: url(../ico/telephone.png) no-repeat;
+}
+
+#ico3{
+	background: url(../ico/index.png) no-repeat;
+}
+
+#ico4{
+	background: url(../ico/opinion.png) no-repeat;
+}
+
+#ico5{
+	top: 14px;
+	background: url(../ico/mail.png) no-repeat;
+}
+
+#ico6{
+	top: 18px;
+	background: url(../ico/thumbs.png) no-repeat;
+}
+
+input[type=number]::-webkit-inner-spin-button,  
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        appearance: none; 
+        margin: 0; 
+    }

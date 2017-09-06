@@ -1,0 +1,104 @@
+.headpage{
+	position: relative;
+	width: 100%;
+	height: 880px;
+	min-width: 1200px;
+}
+
+.headpage .back{
+	position: absolute;
+	max-width: 1920px;
+	width: 100%;
+	height: 880px;
+	margin: 0 auto;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.headpage .flying{
+	margin-top: 218px;
+}
+
+.headpage p{
+	font-size: 16px;
+	margin-top: 34px;
+	margin-bottom: 64px;
+	width: 560px;
+	line-height: 36px;
+	letter-spacing: 1px;
+    color: rgb(255,255,255);
+}
+
+.headpage a{
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 9px;
+	background-color:transparent;
+	color: rgb(255,255,255);
+}
+
+.product{
+	position: relative;
+	height: 800px;
+	width: 100%;
+	min-width: 1200px;
+}
+
+.product .titleone{
+	position: absolute;
+	top: 182px;
+	left: 106px;
+	z-index: 200;
+}
+
+
+/* 广告条span公用样式 */
+.sp{
+	color: #ffffff;
+	font-size: 30px;
+}
+
+/* 广告条button公用样式 */
+.btn{
+	position: absolute;
+	right: 193px;
+	/*margin-left: 200px;*/
+	margin:25px 0 200px 0;
+	padding: 8px 16px;
+	color: #ffffff;
+	font-size: 24px;
+	border: 2px solid;
+	border-radius: 9px;
+	background-color:transparent;
+}
+
+/* 广告条公用样式 */
+.us{
+	position: relative;
+	width: 100%;
+	min-width: 1200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+.a-us{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* 横幅···需要我们底图 */
+.ndus{
+	background-image: url("../imgs/ad1.png");
+	/*// background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* 横幅···加入我们底图 */
+.jous{
+	background-image: url("../imgs/ad2.png");
+	/*// background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}

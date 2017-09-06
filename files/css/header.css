@@ -1,0 +1,93 @@
+/*导航栏位置大小*/
+header{
+	z-index: 999;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	min-width: 1200px;
+}
+
+header .header-back{
+	width: 100%;
+	height: 80px;
+	background: black;
+	opacity: .8;
+}
+
+/*logo*/
+header .left{
+	float: left;
+}
+
+header .logo{
+	margin: 15px;
+}
+
+/*导航栏链接*/
+header .right{
+	position: absolute;
+	left: 40%;
+	transform: translateY(25%);
+	text-align: center;
+}
+
+header ul{
+	text-align: center;
+	margin: 17px 0;
+}
+
+header li{
+	display: inline;
+	margin-left: 45px;
+	border:1px solid rgba(0,0,0,0);
+	border-radius: 9px;
+	padding: 11px 18px;
+
+}
+
+/*导航栏链接样式*/
+header .link{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+header .foucs:hover{
+	border:1px solid #6cf1b0;
+}
+
+header .person{
+	float: right;
+}
+
+header .ps{
+	margin: 25px 0px;
+}
+
+/*动态隐藏导航栏动画*/
+.slideUp {
+ /* -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);*/
+  -webkit-transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
+  -o-transform: translateY(-80px);
+  transform: translateY(-80px);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+/*动态隐藏导航栏动画*/
+.slideDown {
+  /*-webkit-transform: translateY(0);
+  transform: translateY(0);*/
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  /*transition: transform .5s ease-out;*/
+  -webkit-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}

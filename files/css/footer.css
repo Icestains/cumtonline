@@ -1,88 +1,107 @@
-*{
-	padding: 0;
-	margin: 0;
-}
 
-li{
+footer li{
 	list-style-type: none;
-	
 }
 
 footer{
 	display: flex;
-	min-width: 1240px;
-	height: 200px;
-	padding-top: 40px;
+	min-width: 1200px;
+	height: 154px;
+	padding-top: 44px;
 	justify-content: space-around;
 	background: #404040;
+	font-size: 12px;
+
 }
 
 footer .footerall{
 	display: flex;
 	justify-content: center;
-	width: 1240px;
-	/*background: yellow;*/
+	width: 1200px;
+}
+
+footer span{
+	line-height: 20px;
 }
 
 footer .box1{
 	width: 90px;
 }
 
-.box2{
+footer .box2{
 	width: 300px;
 }
 
-.box3{
-	/*position: relative;*/
+footer .box3{
 	width: 400px;
 }
 
+footer .box4{
+	position: relative;
+	width: 410px;
+}
 
 .box-title{
-	font-size: 14px;
 	color: #fe9b00;
 }
 
-footer .urls{
-}
 
 footer ul{
-	line-height: 18px;
+	line-height: 20px;
 }
 
 footer a{
 	text-decoration: none;
 	color: gray;
-	font-size: 14px;
 }
 
 .bottom-info{
 	display: flex;
 	flex-direction: column;
-	font-size: 12px;
-	line-height: 20px;
 	color: gray;
 }
+
 .box3 li{
 	position: relative;
-	top: 30px;
+	top: 26px;
 }
+
 .bottom-button{
 	margin:0 22px;
 	width: 44px;
 }
 
+.box4-down{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+	padding-top: 30px;
+	border-top: 1px solid #aaa;
+}
+
 .qrcode{
 	display: none;
 	position: absolute;
-	top: -150px;
+	top: -120px;
 	height: 120px;
 	width: 120px;
 	left: -20px;
-	
 }
 
-.weibo .qrcode{
-	left: 120px;
+#weibo{
+	left: 70px;
 }
 
+#weixin{
+	left: 170px;
+}
+
+#qqqrcode:hover .qrcode{
+	display: block;
+}
+#wbqrcode:hover .qrcode{
+	display: block;
+}
+#wxqrcode:hover .qrcode{
+	display: block;
+}
